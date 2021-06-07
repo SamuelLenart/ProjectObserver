@@ -9,6 +9,6 @@ public class FaxServer extends Observer {
     }
     @Override
     public void update() {
-        System.out.println("Sprava znie: "+subject.getMessage());
+        System.out.println("FAX: "+subject.getMessage());
     }
 }

@@ -12,6 +12,6 @@ public class SMSserver extends Observer {
     }
     @Override
     public void update(){
-        System.out.println( "Sprava znie: " + subject.getMessage());
+        System.out.println( "SMS: " + subject.getMessage());
     }
 }

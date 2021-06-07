@@ -9,6 +9,6 @@ public class FBServer extends Observer {
     }
     @Override
     public void update() {
-        System.out.println("Sprava znie: "+subject.getMessage());
+        System.out.println("FB: "+subject.getMessage());
     }
 }
