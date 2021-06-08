@@ -1,6 +1,5 @@
 package sk.kosickaakademia.lenart.pattern.observes;
 
-import sk.kosickaakademia.lenart.pattern.Tasr;
 
 public class FBServer extends Observer {
     public FBServer(Tasr subject) {
@@ -10,5 +9,8 @@ public class FBServer extends Observer {
     @Override
     public void update() {
         System.out.println("FB: "+subject.getMessage());
+    }
+    public void remove(){
+        subject.remove(this);
     }
 }

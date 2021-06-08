@@ -1,7 +1,5 @@
 package sk.kosickaakademia.lenart.pattern.observes;
 
-import sk.kosickaakademia.lenart.pattern.Tasr;
-
 public class EmailServer extends Observer {
     public EmailServer(Tasr subject) {
         this.subject=subject;
@@ -10,5 +8,8 @@ public class EmailServer extends Observer {
     @Override
     public void update() {
         System.out.println("EMAIL: "+subject.getMessage());
+    }
+    public void remove(){
+        subject.remove(this);
     }
 }

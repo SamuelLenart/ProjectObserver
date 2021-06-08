@@ -1,8 +1,5 @@
 package sk.kosickaakademia.lenart.pattern.observes;
 
-import sk.kosickaakademia.lenart.pattern.Tasr;
-import sk.kosickaakademia.lenart.pattern.observes.Observer;
-
 public class SMSserver extends Observer {
 
 
@@ -13,5 +10,8 @@ public class SMSserver extends Observer {
     @Override
     public void update(){
         System.out.println( "SMS: " + subject.getMessage());
+    }
+    public void remove(){
+        subject.remove(this);
     }
 }
